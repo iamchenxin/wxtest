@@ -33,6 +33,8 @@ const paths = {
   // ---
   src: resolveApp('src'),
   dst: resolveApp('lib'),
+  tpjest: resolveApp('tpjest'),
+  tmpdir: resolveApp('tmpdir'),
 };
 
 const ports = {
