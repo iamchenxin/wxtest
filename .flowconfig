@@ -1,5 +1,6 @@
 [ignore]
 .*/fbjs/.*
+<PROJECT_ROOT>/lib/.*
 [include]
 <<PROJECT_ROOT>>/../init-scripts
 [libs]
