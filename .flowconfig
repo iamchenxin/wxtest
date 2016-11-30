@@ -3,7 +3,7 @@
 <PROJECT_ROOT>/lib/.*
 [include]
 [libs]
-
+decls/
 [options]
 suppress_type=$FlowIssue
 suppress_type=$FlowFixMe
