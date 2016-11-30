@@ -3,7 +3,9 @@
 import { promisify1arg } from './promise.js';
 
 const node_fs = require('fs');
-const {mustNot} = require('flow-dynamic').pro;
+const pro = require('flow-dynamic').pro;
+const {mustNot} = pro;
+
 //const path = require('path');
 //import {RepoFileError} from './error.js';
 

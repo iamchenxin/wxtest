@@ -8,7 +8,7 @@
   "scripts": {
     "test": "NODE_ENV=test jest $@",
     "build": "gulp build",
-    "start": "node ./lib/index.js",
+    "start": "gulp build && node ./lib/index.js",
     "dev": "npm run start",
     "schema": "node ./lib/updateSchema.js",
     "bnode": "NODE_ENV=dev babel-node"
@@ -19,18 +19,21 @@
   "dependencies": {
     "colors": "^1.1.2",
     "express": "^4.14.0",
-    "flow-dynamic": "0.0.13"
+    "flow-dynamic": "0.0.14"
   },
   "devDependencies": {
     "babel-cli": "^6.18.0",
     "babel-core": "^6.18.0",
     "babel-eslint": "^6.1.2",
+    "babel-plugin-transform-es2015-destructuring": "^6.19.0",
+    "babel-plugin-transform-es2015-parameters": "^6.18.0",
+    "babel-plugin-transform-object-rest-spread": "^6.19.0",
     "eslint": "^3.7.1",
     "eslint-config-fbjs": "^1.1.1",
     "eslint-plugin-babel": "^3.3.0",
     "eslint-plugin-flowtype": "^2.20.0",
     "eslint-plugin-react": "^5.2.2",
-    "flow-bin": "^0.33.0",
+    "flow-bin": "^0.36.0",
     "gulp": "github:gulpjs/gulp#4.0",
     "gulp-babel": "^6.1.2",
     "gulp-rename": "^1.2.2",
